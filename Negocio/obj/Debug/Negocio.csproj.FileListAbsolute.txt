@@ -1,0 +1,9 @@
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\bin\Debug\Negocio.dll
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\bin\Debug\Negocio.pdb
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\bin\Debug\Dominio.dll
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\bin\Debug\Dominio.pdb
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\obj\Debug\Negocio.dll
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\Negocio\obj\Debug\Negocio.pdb

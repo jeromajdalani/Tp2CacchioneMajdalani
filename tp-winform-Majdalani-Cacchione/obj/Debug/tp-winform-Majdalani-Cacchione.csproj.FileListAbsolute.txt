@@ -1,0 +1,16 @@
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp-winform-Majdalani-Cacchione.csprojAssemblyReference.cache
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\tp-winform-Majdalani-Cacchione.exe.config
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\tp-winform-Majdalani-Cacchione.exe
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\tp-winform-Majdalani-Cacchione.pdb
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\Dominio.dll
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\Negocio.dll
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\Dominio.pdb
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\bin\Debug\Negocio.pdb
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp_winform_Majdalani_Cacchione.Form1.resources
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp_winform_Majdalani_Cacchione.frmAlta.resources
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp_winform_Majdalani_Cacchione.Properties.Resources.resources
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp-winform-Majdalani-Cacchione.csproj.GenerateResource.cache
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp-winform-Majdalani-Cacchione.csproj.CoreCompileInputs.cache
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp-winform-Majdalani-Cacchione.csproj.CopyComplete
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp-winform-Majdalani-Cacchione.exe
+C:\Users\jeronimo\Desktop\tp-winform-Majdalani-Cacchione-master\tp-winform-Majdalani-Cacchione\tp-winform-Majdalani-Cacchione\obj\Debug\tp-winform-Majdalani-Cacchione.pdb
