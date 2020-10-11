@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Negocio;
 
 namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
@@ -11,7 +12,6 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
     }
 }

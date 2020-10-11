@@ -8,13 +8,11 @@ using Negocio;
 
 namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
-    public partial class Articulos : System.Web.UI.Page
+    public partial class Age_of_Articulos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio art = new ArticuloNegocio();
-            dgvArticulos.DataSource = art.listar();
-            dgvArticulos.DataBind();
-        }
+
+        } 
     }
 }
