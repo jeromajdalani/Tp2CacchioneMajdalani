@@ -11,7 +11,7 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
 
 
-    public partial class About
+    public partial class Articulos
     {
     }
 }
