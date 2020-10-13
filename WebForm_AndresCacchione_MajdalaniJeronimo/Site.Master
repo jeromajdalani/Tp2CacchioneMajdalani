@@ -53,6 +53,7 @@
                         <li><a runat="server" href="~/Age_of_Articulos">Age of Arts</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
+                        <li><a runat="server" href="~/PaginaSinMaster">Lista De Articulos</a></li>
                     </ul>
                 </div>
             </div>

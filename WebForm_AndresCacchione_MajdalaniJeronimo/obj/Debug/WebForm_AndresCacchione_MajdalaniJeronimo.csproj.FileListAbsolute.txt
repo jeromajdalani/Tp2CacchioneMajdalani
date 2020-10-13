@@ -230,3 +230,7 @@ C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\WebForm_AndresCacchione_M
 C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\WebForm_AndresCacchione_MajdalaniJeronimo\obj\Debug\WebForm_AndresCacchione_MajdalaniJeronimo.csproj.CopyComplete
 C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\WebForm_AndresCacchione_MajdalaniJeronimo\obj\Debug\WebForm_AndresCacchione_MajdalaniJeronimo.dll
 C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\WebForm_AndresCacchione_MajdalaniJeronimo\obj\Debug\WebForm_AndresCacchione_MajdalaniJeronimo.pdb
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\WebForm_AndresCacchione_MajdalaniJeronimo\bin\Dominio.dll
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\WebForm_AndresCacchione_MajdalaniJeronimo\bin\Negocio.dll
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\WebForm_AndresCacchione_MajdalaniJeronimo\bin\Dominio.pdb
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\WebForm_AndresCacchione_MajdalaniJeronimo\bin\Negocio.pdb
