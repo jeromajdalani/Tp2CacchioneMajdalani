@@ -10,3 +10,9 @@ C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\Dominio\obj\Debug\Dominio
 C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\Dominio\obj\Debug\Dominio.dll
 C:\Users\Andres\Documents\GitHub\Tp2CacchioneMajdalani\Dominio\obj\Debug\Dominio.pdb
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\Dominio\bin\Debug\Dominio.dll
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\Dominio\bin\Debug\Dominio.pdb
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\Dominio\obj\Debug\Dominio.csprojAssemblyReference.cache
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\Dominio\obj\Debug\Dominio.dll
+C:\Users\jeronimo\Desktop\Nueva carpeta (2)\tp-winform-Majdalani-Cacchione\Dominio\obj\Debug\Dominio.pdb
