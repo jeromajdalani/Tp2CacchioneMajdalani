@@ -11,25 +11,25 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
 
 
-    public partial class Articulos
+    public partial class Error
     {
 
         /// <summary>
-        /// btnSumarAlCarrito control.
+        /// form1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSumarAlCarrito;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// dgvArticulos control.
+        /// lblError control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvArticulos;
+        protected global::System.Web.UI.WebControls.Label lblError;
     }
 }

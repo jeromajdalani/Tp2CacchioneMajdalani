@@ -22,27 +22,35 @@ namespace Negocio
             comando.CommandText = "select a.Id, a.Codigo, a.Nombre, a.Descripcion ArtDescripcion, m.Descripcion MarDescripcion,m.id IdMarca,c.id IdCategoria, c.Descripcion CatDescripcion, a.ImagenUrl, a.Precio from ARTICULOS as a, MARCAS as m, CATEGORIAS as c where m.Id = a.IdMarca and c.Id = a.IdCategoria";
             comando.Connection = conexion;
 
-            conexion.Open();
-            lector = comando.ExecuteReader();
-            while (lector.Read())
+            try
             {
-                Articulo aux = new Articulo();
-                aux.Nombre = (string)lector["Nombre"];
-                aux.Descripción = (string)lector["ArtDescripcion"];
-                aux.Imagen = (string)lector["ImagenUrl"];
-                aux.Marca.Descripcion = (string)lector["MarDescripcion"];
-                aux.Categoria.Descripcion = (string)lector["CatDescripcion"];
-                aux.Marca.ID = (int)lector["IdMarca"];
-                aux.Categoria.ID = (int)lector["IdCategoria"];
-                aux.Precio = (decimal)lector["Precio"];
-                aux.Codigo = (string)lector["Codigo"];
-                aux.ID = (int)lector["Id"];
-                lista.Add(aux);
+                conexion.Open();
+                lector = comando.ExecuteReader();
+                while (lector.Read())
+                {
+                    Articulo aux = new Articulo();
+                    aux.Nombre = (string)lector["Nombre"];
+                    aux.Descripción = (string)lector["ArtDescripcion"];
+                    aux.Imagen = (string)lector["ImagenUrl"];
+                    aux.Marca.Descripcion = (string)lector["MarDescripcion"];
+                    aux.Categoria.Descripcion = (string)lector["CatDescripcion"];
+                    aux.Marca.ID = (int)lector["IdMarca"];
+                    aux.Categoria.ID = (int)lector["IdCategoria"];
+                    aux.Precio = (decimal)lector["Precio"];
+                    aux.Codigo = (string)lector["Codigo"];
+                    aux.ID = (int)lector["Id"];
+                    lista.Add(aux);
+                }
+
+                lector.Close();
+                conexion.Close();
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
 
-            lector.Close();
-            conexion.Close();
-            return lista;
         }
 
         public void modificar(Articulo articulo)

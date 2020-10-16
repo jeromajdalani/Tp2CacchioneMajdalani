@@ -16,7 +16,18 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            ListaArticulos = negocio.listar();
+
+            try
+            {
+                ListaArticulos = negocio.listar();
+                Session.Add("listaArticulos", ListaArticulos);
+                //Response.Redirect("Detalle.aspx");
+            }
+            catch (Exception ex)
+            {
+                Session.Add("Cualquier nombre", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
         }
     }
 }
