@@ -11,12 +11,13 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
     public partial class Articulos : System.Web.UI.Page
     {
+        public Carrito contenidoCarrito=null;
         public List<Articulo> ListaArticulos { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-
+            
             try
             {
                 ListaArticulos = negocio.listar();
@@ -28,6 +29,12 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
                 Session.Add("Cualquier nombre", ex.ToString());
                 Response.Redirect("Error.aspx");
             }
+        }
+
+        protected void btnSumarAlCarrito_Click(object sender, EventArgs e)
+        {
+            if(contenidoCarrito == null)
+                contenidoCarrito = new Carrito();
         }
     }
 }

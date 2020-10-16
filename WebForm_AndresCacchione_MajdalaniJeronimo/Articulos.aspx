@@ -17,7 +17,7 @@
                                 <h5 class="card-title"><%=item.Nombre%></h5>
                                 <h5 class="card-title">Precio: $ <%=item.Precio%></h5>
                                 <a href="Detalle.aspx?idArticulo=<%=item.ID.ToString()%>" class="btn btn-primary"> Detalle </a>
-                                <asp:Button ID=btnSumarAlCarrito Text="Sumar al Carrito" runat="server" BackColor="#00CC00" />
+                                <asp:Button ID="btnSumarAlCarrito" OnClick="btnSumarAlCarrito_Click" Text="Sumar al Carrito" runat="server" BackColor="#00CC00" />
                                <%-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --%>
                             </div>
                         </div>
