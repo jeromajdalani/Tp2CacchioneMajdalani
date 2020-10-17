@@ -8,7 +8,7 @@
      <%--   <div class="container">--%>
             
            <div class="row">
-           <%foreach (Dominio.Articulo item in ListaArticulos)
+           <%foreach (Dominio.Articulo item in ListaArticulosLocal)
                {%>
                     <div class="col-md-4">
                         <div class="card" style="width:20rem;" >

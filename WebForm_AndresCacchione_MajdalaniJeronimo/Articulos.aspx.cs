@@ -11,18 +11,21 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
     public partial class Articulos : System.Web.UI.Page
     {
-        public Carrito contenidoCarrito=null;
-        public List<Articulo> ListaArticulos { get; set; }
-        public List<Articulo> ListaCarrito { get; set; }
+        public List<Articulo> ListaArticulosLocal { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
 
             try
             {
-                ListaArticulos = negocio.listar();
-                Session.Add("listaArticulos", ListaArticulos);
-               
+                ListaArticulosLocal = negocio.listar();
+                Session.Add("listaArticulos", ListaArticulosLocal);
+                
+                if(Session["listaCarrito"]==null)
+                {
+                    List<Articulo> listaCarritoLocal = new List<Articulo>();
+                    Session.Add("listaCarrito", listaCarritoLocal);
+                }
             }
             catch (Exception ex)
             {
@@ -33,8 +36,7 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 
         protected void btnSumarAlCarrito_Click(object sender, EventArgs e)
         {
-            if(contenidoCarrito == null)
-                contenidoCarrito = new Carrito();
+
         }
     }
 }
