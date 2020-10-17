@@ -13,16 +13,16 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
     {
         public Carrito contenidoCarrito=null;
         public List<Articulo> ListaArticulos { get; set; }
-
+        public List<Articulo> ListaCarrito { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticuloNegocio negocio = new ArticuloNegocio();
-            
+
             try
             {
                 ListaArticulos = negocio.listar();
                 Session.Add("listaArticulos", ListaArticulos);
-                //Response.Redirect("Detalle.aspx");
+               
             }
             catch (Exception ex)
             {
