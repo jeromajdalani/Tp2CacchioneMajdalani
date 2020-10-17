@@ -34,8 +34,17 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
                 Session["listaCarrito"] = ListaCarritoLocal;
             }
 
-            //TODO: Si llega borrando id:
+            //TODO: Si llega eliminando id:
+            if (Request.QueryString["idEliminar"] != null)
+            {
+                int idEliminar = Convert.ToInt32(Request.QueryString["idEliminar"]);
+                List<Articulo> listaArticulosLocal = (List<Articulo>)Session["listaArticulos"];
+                ListaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
+                ListaCarritoLocal.Remove(ListaCarritoLocal.Find(aux => aux.ID == idEliminar));
+                Session["listaCarrito"] = ListaCarritoLocal;
+            }
 
+            //Si entramos directamente por el boton de Carrito:
             ListaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
         }
     }
