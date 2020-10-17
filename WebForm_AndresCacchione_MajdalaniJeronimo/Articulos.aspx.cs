@@ -18,8 +18,16 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 
             try
             {
-                ListaArticulosLocal = negocio.listar();
-                Session.Add("listaArticulos", ListaArticulosLocal);
+                if (Session["listaBuscados"] == null)
+                {
+                    ListaArticulosLocal = negocio.listar();
+                    Session.Add("listaArticulos", ListaArticulosLocal);
+                }
+                else
+                {
+                    ListaArticulosLocal = (List<Articulo>)Session["listaBuscados"];
+                    Session["listaBuscados"] = null;
+                }
                 
                 if(Session["listaCarrito"]==null)
                 {
@@ -33,10 +41,6 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
                 Response.Redirect("Error.aspx");
             }
         }
-
-        protected void btnSumarAlCarrito_Click(object sender, EventArgs e)
-        {
-
-        }
+            
     }
 }

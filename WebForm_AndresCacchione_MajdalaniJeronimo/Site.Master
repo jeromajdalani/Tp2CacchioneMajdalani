@@ -63,7 +63,7 @@
                         <li class="navbar-brand" ><a style="color: #000000" runat="server" href="~/Carrito">Carrito</a></li>
                         
                   <asp:TextBox class="form-text" runat="server" ID="TxtBuscar" ></asp:TextBox>
-                  <asp:Button class="btn btn-primary btn-lg active" runat="server" Text="Buscar" ID="BtnBuscar"/>
+                  <asp:Button class="btn btn-primary btn-lg active" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" ID="BtnBuscar"/>
                     </ul>
                 </div>
             </div>
