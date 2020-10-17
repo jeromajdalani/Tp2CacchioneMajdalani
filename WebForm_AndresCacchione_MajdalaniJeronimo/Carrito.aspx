@@ -10,7 +10,7 @@
 <body>
     <form id="form1" runat="server">
          <div class="row">
-           <%foreach (Dominio.Articulo item in listaCarritoLocal)
+           <%foreach (Dominio.Articulo item in ListaCarritoLocal)
                {%>
                     <div class="col-md-4">
                         <div class="card" style="width:20rem;" >

@@ -11,22 +11,32 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
     public partial class Carrito : System.Web.UI.Page
     {
-        public List <Articulo> listaCarritoLocal { get; set; }
+        public List <Articulo> ListaCarritoLocal { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            //If llega con ID:
-            if(Request.QueryString["idArticulo"] != null)
-            { 
-                int idaux = Convert.ToInt32(Request.QueryString["idArticulo"]);
-                List<Articulo> listaArticulosLocal = (List<Articulo>)Session["listaArticulos"];
-                listaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
-                listaCarritoLocal.Add(listaArticulosLocal.Find(aux => aux.ID == idaux));
-                Session["listaCarrito"] = listaCarritoLocal;
+            if(ListaCarritoLocal==null)
+            {
+                ListaCarritoLocal = new List<Articulo>();
             }
             
-            //TODO: Si llega sin id: 
+            if (Session["listaCarrito"] == null)
+            {
+                Session.Add("listaCarrito", ListaCarritoLocal);
+            }
 
-            //TODO: Si llega borrando id: 
+            //If llega con ID:
+            if (Request.QueryString["idArticulo"] != null)
+            {
+                int idaux = Convert.ToInt32(Request.QueryString["idArticulo"]);
+                List<Articulo> listaArticulosLocal = (List<Articulo>)Session["listaArticulos"];
+                ListaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
+                ListaCarritoLocal.Add(listaArticulosLocal.Find(aux => aux.ID == idaux));
+                Session["listaCarrito"] = ListaCarritoLocal;
+            }
+
+            //TODO: Si llega borrando id:
+
+            ListaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
         }
     }
 }
