@@ -11,6 +11,7 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 {
     public partial class Carrito : System.Web.UI.Page
     {
+        public decimal TotalaPagar { get; set; }
         public List <Articulo> ListaCarritoLocal { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -46,6 +47,11 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
 
             //Si entramos directamente por el boton de Carrito:
             ListaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
+
+            TotalaPagar = 0;
+            foreach (Articulo item in ListaCarritoLocal)
+                TotalaPagar += item.Precio;
+            PrecioaPagar.Text = "Total a pagar: " + TotalaPagar.ToString();
         }
     }
 }

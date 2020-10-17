@@ -12,6 +12,8 @@
     <div>
         <a class="btn btn-outline-dark btn-block" href="Articulos.aspx">Volver al Catálogo</a>
     </div>
+    <asp:Label ID="PrecioaPagar" runat="server" />
+
     <form id="form1" runat="server">
          <div class="row">
            <%foreach (Dominio.Articulo item in ListaCarritoLocal)
