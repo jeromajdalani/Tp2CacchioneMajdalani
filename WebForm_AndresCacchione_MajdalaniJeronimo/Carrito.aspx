@@ -11,6 +11,10 @@
     
     <div>
         <a class="btn btn-outline-dark btn-block" href="Articulos.aspx">Volver al Catálogo</a>
+        <div> 
+            (<%=Session["CantidadCarrito"] %>)
+        </div>
+       
     </div>
     <asp:Label ID="PrecioaPagar" runat="server" />
 

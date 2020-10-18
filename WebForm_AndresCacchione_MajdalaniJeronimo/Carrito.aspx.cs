@@ -52,6 +52,10 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
             foreach (Articulo item in ListaCarritoLocal)
                 TotalaPagar += item.Precio;
             PrecioaPagar.Text = "Total a pagar: " + TotalaPagar.ToString();
+
+            List<Articulo> ListaArticuloCarrito = new List<Articulo>();
+            ListaArticuloCarrito = (List<Articulo>)Session["listaCarrito"];
+            Session["CantidadCarrito"]=ListaArticuloCarrito.Count().ToString();
         }
     }
 }

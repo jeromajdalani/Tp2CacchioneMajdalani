@@ -13,6 +13,10 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["CantidadCarrito"] == null)
+            {
+                Session.Add("CantidadCarrito", "0");
+            }
         }
 
         protected void BtnBuscar_Click(object sender, EventArgs e)
