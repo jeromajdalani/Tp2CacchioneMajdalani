@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,13 +14,25 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
     {
         public decimal TotalaPagar { get; set; }
         public List <Articulo> ListaCarritoLocal { get; set; }
+        public List<Articulo> SetArticulos { get; set; }
+        public Dictionary<int, int> cantidadArticulos { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
             if(ListaCarritoLocal==null)
             {
                 ListaCarritoLocal = new List<Articulo>();
             }
+
+            if(SetArticulos==null)
+            {
+                SetArticulos = new List<Articulo>();
+            }
             
+            if(cantidadArticulos==null)
+            {
+                cantidadArticulos = new Dictionary<int, int>();
+            }
+
             if (Session["listaCarrito"] == null)
             {
                 Session.Add("listaCarrito", ListaCarritoLocal);
@@ -48,14 +61,39 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
             //Si entramos directamente por el boton de Carrito:
             ListaCarritoLocal = (List<Articulo>)Session["listaCarrito"];
 
+
+            foreach (Articulo item in ListaCarritoLocal)
+            {
+                bool existe = new bool();
+                foreach (Articulo itemSet in SetArticulos)
+                {
+                    if (item.ID == itemSet.ID)
+                    {
+                        existe = true;
+                        cantidadArticulos[item.ID]++;
+                    }
+                }
+                if(existe==false)
+                {
+                    SetArticulos.Add(item);
+                    cantidadArticulos.Add(item.ID, 1);
+                }
+            }
+
+            //Total a pagar
             TotalaPagar = 0;
             foreach (Articulo item in ListaCarritoLocal)
                 TotalaPagar += item.Precio;
             PrecioaPagar.Text = "Total a pagar: " + TotalaPagar.ToString();
 
+            //Cantidad en el carrito
             List<Articulo> ListaArticuloCarrito = new List<Articulo>();
             ListaArticuloCarrito = (List<Articulo>)Session["listaCarrito"];
             Session["CantidadCarrito"]=ListaArticuloCarrito.Count().ToString();
         }
+    }
+
+    internal class Dictionary<T1, T2, T3>
+    {
     }
 }

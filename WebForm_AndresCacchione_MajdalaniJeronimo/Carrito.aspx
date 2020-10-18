@@ -20,13 +20,14 @@
 
     <form id="form1" runat="server">
          <div class="row">
-           <%foreach (Dominio.Articulo item in ListaCarritoLocal)
+           <%foreach (Dominio.Articulo item in SetArticulos)
                {%>
                     <div class="col-md-4">
                         <div class="card" style="width:20rem;" >
                             <img src="<%=item.Imagen%>" class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title"><%=item.Nombre%></h5>
+                                <h5 class="card-title>">Cantidad <%=cantidadArticulos[item.ID].ToString()%>  </h5>
                                 <h5 class="card-title">Precio: $ <%=item.Precio%></h5>
                                 <a class="btn btn-danger" href="Carrito.aspx?idEliminar=<%=item.ID.ToString()%>">Eliminar</a>
                                <%-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> --%>
