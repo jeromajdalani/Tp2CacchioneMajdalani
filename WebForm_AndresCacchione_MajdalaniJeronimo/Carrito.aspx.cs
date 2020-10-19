@@ -84,7 +84,7 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
             TotalaPagar = 0;
             foreach (Articulo item in ListaCarritoLocal)
                 TotalaPagar += item.Precio;
-            PrecioaPagar.Text = "Total a pagar: " + TotalaPagar.ToString();
+            PrecioaPagar.Text = "Total a pagar: $ " + TotalaPagar.ToString();
 
             //Cantidad en el carrito
             List<Articulo> ListaArticuloCarrito = new List<Articulo>();
@@ -93,7 +93,4 @@ namespace WebForm_AndresCacchione_MajdalaniJeronimo
         }
     }
 
-    internal class Dictionary<T1, T2, T3>
-    {
-    }
 }

@@ -9,19 +9,20 @@
 </head>
 <body class="bg-primary">
     
-    <div>
-        <a class="btn btn-outline-dark btn-block" href="Articulos.aspx">Volver al Catálogo</a>
-        <h6> Carrito <span class="badge badge-success">(<%=Session["CantidadCarrito"]%>)</span></h6>
-       
+    
+    <a class="btn btn-outline-dark btn-block" href="Articulos.aspx">Volver al Catálogo</a>
+    <div class="btn-group-lg" style="">
+    <h6 class="btn btn-secondary"> Carrito <span class="badge badge-success " >(<%=Session["CantidadCarrito"]%>)</span></h6>
+    <asp:Label class="btn btn-secondary" ID="PrecioaPagar" runat="server" />
     </div>
-    <asp:Label ID="PrecioaPagar" runat="server" />
-
+    
+   
     <form id="form1" runat="server">
-         <div class="row">
+         <div class="row align-content-md-between">
            <%foreach (Dominio.Articulo item in SetArticulos)
                {%>
                     <div class="col-md-4">
-                        <div class="card" style="width:20rem;" >
+                        <div class="card mt-4 ml-auto mr-auto" style="width:20rem;" >
                             <img src="<%=item.Imagen%>" class="card-img-top" alt="..."/>
                             <div class="card-body">
                                 <h5 class="card-title"><%=item.Nombre%></h5>

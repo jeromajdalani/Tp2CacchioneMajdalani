@@ -24,7 +24,6 @@
 
 </head>
 <body class="bg-primary">
-        >
     <form runat="server">
             <asp:ScriptManager runat="server">
             <Scripts>
@@ -46,25 +45,28 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
+        <hr />
+        
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                   
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" style="color: #000000" runat="server" href="~/">GesThor</a>
+    
+                    <a class="btn btn-lg btn-outline-dark mr-2 ml-2" style="color: #000000" runat="server" href="~/">GesThor</a>
                 </div>
                 <div class="nav align-items-lg-start">
                     <ul class="nav align-items-lg-start">
-                        <li class="navbar-brand" ><a style="color: #000000" runat="server" href="~/Articulos">Catalogo</a></li>
-                        <li class="navbar-brand" ><a style="color: #000000" runat="server" href="~/Carrito">Carrito <span class="badge badge-success">(<%=Session["CantidadCarrito"] %>)</span></a></li>
+                        <li class="btn btn-lg btn-outline-dark mr-2 ml-2" ><a style="color: #FFFFFF" runat="server" href="~/Articulos">Catalogo</a></li>
+                        <li class="btn btn-lg btn-outline-dark mr-2 ml-2" ><a style="color: #FFFFFF" runat="server" href="~/Carrito">Carrito <span class="badge badge-success"><%=Session["CantidadCarrito"] %></span></a></li>
                         
-                  <asp:TextBox class="form-text" runat="server" ID="TxtBuscar" ></asp:TextBox>
-                  <asp:Button class="btn btn-primary btn-lg active" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" ID="BtnBuscar"/>
-                    </ul>
+                  <asp:TextBox class="form-text mr-2 ml-2" runat="server" ID="TxtBuscar" ></asp:TextBox>
+                  <asp:Button class="btn btn-primary btn-lg active mr-2 ml-2" runat="server" Text="Buscar" OnClick="BtnBuscar_Click" ID="BtnBuscar"/>
+                        
+                        </ul>
+                    <hr />
                 </div>
             </div>
         </div>
